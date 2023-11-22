@@ -34,14 +34,15 @@ const calculate = () => {
         case '-':
             currentNumber = num1 - num2;
             break;
-        case '*':
+        case 'X':
             currentNumber = num1 * num2;
             break;
         case '/':
             currentNumber = num1 / num2;
             break;
-        case '&radic;':
+        case '√':
             currentNumber = Math.sqrt(num1);
+            break
     }
 
     //Convertir el resultado numerico a cadena de  strings
