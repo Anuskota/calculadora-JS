@@ -40,6 +40,8 @@ const calculate = () => {
         case '/':
             currentNumber = num1 / num2;
             break;
+        case '&radic;':
+            currentNumber = Math.sqrt(num1);
     }
 
     //Convertir el resultado numerico a cadena de  strings
@@ -71,6 +73,10 @@ buttons.forEach((button) => {
             currentOperator = "";
             updateResult(); //Aqui limpoiamos la pantalla
             displayResult.textContent = 0;
+
+        } else if (value === '&larr;') {
+            currentNumber = currentNumber.toString().slice(0, -1);
+            currentNumber = value;
 
         } else {
              //Aqui pasamos el numero que hay actual a la variable de numero previo para poder ingresar el segundo numero

@@ -5,14 +5,12 @@
 }
 
 body{
-    border: 2px solid red;
     margin: 0;
     background-color: #A457D9
     
 
 }
 header{
-    border: 3px solid green;
     display:flex;
     justify-content: center;
 
@@ -25,7 +23,6 @@ header{
     justify-content:center;
     align-items: center; 
     height:100vh ;
-    border: 10px solid black;
     
 }
 .calculator{
