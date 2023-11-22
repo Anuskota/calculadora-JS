@@ -38,6 +38,10 @@ header{
     box-shadow: 15px 10px 0 5px #00000033;
     
 }
+label{
+    font-size: 50px;
+    
+}
 
 button{
     font-size: 25px;
@@ -56,7 +60,7 @@ button:focus{
     outline: none;
 }
 /*Decimos a los botones C y 0 que se espandan 2 columnas*/
-.col-2{
+#col-2{
     grid-column: span 2;
  }
 

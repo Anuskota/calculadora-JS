@@ -1,15 +1,91 @@
-const beforeValue = document.getElementById("before-value");
-const afterValue = document.getElementById("after-value");
 
-/* 
-creamos una variable que nos recoja todos los elementos que tengan una misma clase, en este caso toodos los numeros de los botones y de los operadores + - / * */
 
-let numberButton = document.querySelectorAll(".number");
-let operatorNumber = document.querySelectorAll("operator");
+//Obtener los elementos del DOM
 
-let calculator= new Calculator();
+const displayResult = document.querySelector('.display-screen');
+const buttons = document.querySelectorAll('.buttons-calculator');
 
-console.log(calculator.add(beforeValue, afterValue))
-console.log(calculator.subtract(6, 7))
-console.log(calculator.divide(21, 7))
-console.log(calculator.multiply(6, 7))
+
+//Creamos variables para almacenar los datos: el numero que se ingresó y el operador
+
+let currentNumber = ""; //Numero que estamos ingresando
+let previusNumber = "";//almacena el dato que se ingresó cuando vayamos a ingresar el segundo dato
+let currentOperator = "";
+
+//Realizamos una funcion que actualice el resultado del Display
+
+const updateResult = () => {
+    displayResult.textContent = currentNumber;
+
+};
+//Función para realizar la operacion matematica
+
+const calculate = () => {
+    //Convertimos los numeros de cadena a numero con parsetFloat
+    const num1 = parseFloat(previusNumber);
+    const num2 = parseFloat(currentNumber);
+
+    //Se realiza la operacion según el operador seleccionado
+
+    switch (currentOperator) {
+        case '+':
+            currentNumber = num1 + num2;
+            break;
+        case '-':
+            currentNumber = num1 - num2;
+            break;
+        case '*':
+            currentNumber = num1 * num2;
+            break;
+        case '/':
+            currentNumber = num1 / num2;
+            break;
+    }
+
+    //Convertir el resultado numerico a cadena de  strings
+
+    currentNumber = currentNumber.toString();
+
+};
+
+/* Event Listener- Escuchamos el evento Click, cuando hacen click en un boton. Button es parecido a un array y se recorre con forEach. Button lo creo ahora mismo dentro de la funcion. Creo  la constante value que almacena lo que pse por click*/
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        const value = button.textContent
+
+        if (button.classList.contains('data-number')) {
+            currentNumber = currentNumber + value;
+            updateResult();
+        } else if (value === '=') { //verificamos si es el boton de igual =
+            calculate();
+            updateResult();
+            //Reiniciar las variables despues de la operacion
+            currentNumber = "";
+            previusNumber = ""
+
+            //Verifico si es el valor de C el valor que estamos ingresando
+        } else if (value === 'C') {
+
+            currentNumber = "";
+            previusNumber = "";
+            currentOperator = "";
+            updateResult(); //Aqui limpoiamos la pantalla
+            displayResult.textContent = 0;
+
+        } else {
+             //Aqui pasamos el numero que hay actual a la variable de numero previo para poder ingresar el segundo numero
+            previusNumber = currentNumber;
+            currentNumber = '';
+            currentOperator = value;
+
+
+        }
+    })
+    
+   
+});
+
+
+
+
+
