@@ -7,12 +7,16 @@
 body{
     border: 2px solid red;
     margin: 0;
-    background-color: rgb(8, 50, 105);
+    background-color: #A457D9
     
 
 }
-.header{
-   
+header{
+    border: 3px solid green;
+    display:flex;
+    justify-content: center;
+
+    
     
 
 }
@@ -28,7 +32,7 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 75px) ; /*Se hacen columnas de 4 a 75px, se repite*/ 
     grid-template-rows: 160px repeat(5, 75px) ;
-    background-color: #00916e;
+    background-color: #575FD9;
     padding: 15px;
     border-radius: 32px;
     box-shadow: 15px 10px 0 5px #00000033;
@@ -42,11 +46,11 @@ button{
     padding: 0;
     border-radius: 32px;
     border: none;
-    background-color:  #00916e;
+    background-color: #575FD9;
     box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f; /*muevo las sombras en los ejes de la X y de la Y*/
 }
 button:active{
-    background-color: #006f54;
+    background-color: #5B50B5;
 }
 button:focus{
     outline: none;
