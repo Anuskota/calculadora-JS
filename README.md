@@ -7,7 +7,7 @@ The technologies used have been:
 - <a href="https://www.w3.org/TR/?tags%5B0%5D=html">HTML</a>
 - <a href= "https://www.w3.org/TR/?tags%5B0%5D=css">CSS</a>
 
-    TOOLS:
+TOOLS:
    <ul>
    <li>Visual Studio Code</li>
    <li>Estructuras de etiquetas en HTML</li>
