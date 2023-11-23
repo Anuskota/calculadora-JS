@@ -1,6 +1,6 @@
 <H1>ANUSKA  CALCULATOR</H1>
 
-Anuska calculator is a calculator that performs basic arithmetic operations.
+Anuska calculator is a calculator that performs basic arithmetic operations, including square root, percentage and numbers with decimals.
 
 The technologies used have been:
 
