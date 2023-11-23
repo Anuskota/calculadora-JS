@@ -4,6 +4,7 @@
 
 const displayResult = document.querySelector('.display-screen');
 const buttons = document.querySelectorAll('.buttons-calculator');
+console.log(buttons);
 
 
 //Creamos variables para almacenar los datos: el numero que se ingresó y el operador
@@ -24,6 +25,7 @@ const calculate = () => {
     //Convertimos los numeros de cadena a numero con parsetFloat
     const num1 = parseFloat(previusNumber);
     const num2 = parseFloat(currentNumber);
+    
 
     //Se realiza la operacion según el operador seleccionado
 
