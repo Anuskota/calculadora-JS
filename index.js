@@ -4,7 +4,6 @@
 
 const displayResult = document.querySelector('.display-screen');
 const buttons = document.querySelectorAll('.buttons-calculator');
-console.log(buttons);
 
 
 //Creamos variables para almacenar los datos: el numero que se ingresó y el operador
@@ -44,7 +43,10 @@ const calculate = () => {
             break;
         case '√':
             currentNumber = Math.sqrt(num1);
-            break
+            break;
+        case '%':
+            currentNumber = num1 * (0.01);
+            break;
     
     }
 
@@ -58,6 +60,7 @@ const calculate = () => {
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
         const value = button.textContent
+    
 
         if (button.classList.contains('data-number')) {
             currentNumber = currentNumber + value;
@@ -75,16 +78,14 @@ buttons.forEach((button) => {
             currentNumber = "";
             previusNumber = "";
             currentOperator = "";
-            updateResult(); //Aqui limpoiamos la pantalla
-            displayResult.textContent = 0;
+            updateResult(); 
+            displayResult.textContent = 0; //Aqui limpoiamos la pantalla
 
-        } else if (value === '&larr;') {
-            currentNumber = currentNumber.toString().slice(0, -1);
-            currentNumber = value;
 
         } else if (value === '.') {
             
             currentNumber = currentNumber + ".";
+
 
         } else {
              //Aqui pasamos el numero que hay actual a la variable de numero previo para poder ingresar el segundo numero

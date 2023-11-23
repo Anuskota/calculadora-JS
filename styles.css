@@ -30,11 +30,12 @@ header{
 .calculator{
     display: grid;
     grid-template-columns: repeat(4, 75px) ; /*Se hacen columnas de 4 a 75px, se repite*/ 
-    grid-template-rows: 160px repeat(5, 75px) ;
+    grid-template-rows: 160px repeat(6, 75px) ;
     background-color: #575FD9;
     padding: 15px;
     border-radius: 32px;
     box-shadow: 15px 10px 0 5px #00000033;
+
     
 }
 label{
@@ -61,6 +62,10 @@ button:focus{
 /*Decimos a los botones C y 0 que se espandan 2 columnas*/
 #col-2{
     grid-column: span 2;
+ }
+
+#col-4{
+    grid-column:span 4;
  }
 
 /*Caracteristicas del display*/
