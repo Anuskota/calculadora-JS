@@ -7,8 +7,6 @@ The technologies used have been:
 - <a href="https://www.w3.org/TR/?tags%5B0%5D=html">HTML</a>
 - <a href= "https://www.w3.org/TR/?tags%5B0%5D=css">CSS</a>
 
-1. <a href="https://github.com/Anuskota/landing_page/blob/main/index.html">HTML</a> y <a href="https://github.com/Anuskota/landing_page/blob/main/index.css">CSS</a>
-    
     TOOLS:
    <ul>
    <li>Visual Studio Code</li>
@@ -23,4 +21,9 @@ The technologies used have been:
 
    </ul>
 
-   
+   This project is very useful for those people who want to have an easy-to-understand calculator on their mobile device, with buttons and numbers suitable for people with poor visibility.
+
+    It is necessary to install visual studio code on your computer to be able to develop all the code for this calculator.
+
+    It does not require external sources or file images.
+
