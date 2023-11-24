@@ -35,10 +35,9 @@ This project is very useful for those people who want to have an easy-to-underst
 
     https://github.com/Anuskota/calculadora-JS.git
 
+ It is necessary to install visual studio code on your computer to be able to develop all the code for this calculator.
 
-    It is necessary to install visual studio code on your computer to be able to develop all the code for this calculator.
-
-    It does not require external sources or file images.
+ It does not require external sources or file images.
 
 
   2. Open the index.html file and it is ready you can use.
