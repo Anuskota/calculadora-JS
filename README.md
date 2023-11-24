@@ -1,29 +1,46 @@
-<H1>ANUSKA  CALCULATOR</H1>
+<H1>P-3 ANUSKA  CALCULATOR</H1>
 
 Anuska calculator is a calculator that performs basic arithmetic operations, including square root, percentage and numbers with decimals.
 
-The technologies used have been:
+🎯 OBJECTIVE
 
-- <a href="https://www.w3.org/TR/?tags%5B0%5D=html">HTML</a>
-- <a href= "https://www.w3.org/TR/?tags%5B0%5D=css">CSS</a>
+This project is very useful for those people who want to have an easy-to-understand calculator on their mobile device, with buttons and numbers suitable for people with poor visibility.
 
-TOOLS:
-   <ul>
-   <li>Visual Studio Code</li>
-   <li>Estructuras de etiquetas en HTML</li>
-   <li>Estructuras de estilos CSS</li>
-   <li><a href="https://www.figma.com">Figma</a></li>
-   <li><a href="https://favicon.io">Favicon</a></li>
-   <li><a href="https://fontawesome.com/">Fontawesome</a></li>
-   <li><a href="https://github.com/Anuskota">GitHub</a></li>
-   <li><a href="https://trello.com">Trello</a></li>
+ 🌈 Main features:
+
+<ul>
+   <li> Basics Operations</li>
+   <li> Advanced Features</li>
+
+</ul>
+
+📷 ScreenShot
 
 
-   </ul>
 
-   This project is very useful for those people who want to have an easy-to-understand calculator on their mobile device, with buttons and numbers suitable for people with poor visibility.
+![Alt text](CALCULADORA_FOTO.png)
+
+
+💻  The technologies used have been:
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,js,figma,github " />
+  </a>
+</p>
+
+ 💽 Installation
+
+  1. Clone this repository in your Visual Studio
+
+    https://github.com/Anuskota/calculadora-JS.git
+
 
     It is necessary to install visual studio code on your computer to be able to develop all the code for this calculator.
 
     It does not require external sources or file images.
 
+
+  2. Open the index.html file and it is ready you can use.
+
+ <h2> 🎉It´s Easy!! </h2>
