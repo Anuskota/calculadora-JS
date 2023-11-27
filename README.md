@@ -16,9 +16,9 @@ This project is very useful for those people who want to have an easy-to-underst
 
 📷 ScreenShot
 
+![Alt text](public/css/foto/CALCULADORA_FOTO.png)
 
-
-![Alt text](CALCULADORA_FOTO.png)
+<!-- <img src="public/css/foto/CALCULADORA_FOTO.png>"/> -->
 
 
 💻  The technologies used have been:

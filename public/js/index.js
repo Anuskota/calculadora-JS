@@ -78,9 +78,19 @@ buttons.forEach((button) => {
             currentNumber = "";
             previusNumber = "";
             currentOperator = "";
-            updateResult(); 
+            updateResult();
             displayResult.textContent = 0; //Aqui limpoiamos la pantalla
 
+
+        } else if (value === '←') {
+            if (displayResult.textContent.length == 1) {
+                displayResult.textContent = "0";
+                return;
+            } else {
+                displayResult.textContent = displayResult.textContent.slice(0, -1);
+                return;
+            }
+        
 
         } else if (value === '.') {
             
@@ -97,7 +107,6 @@ buttons.forEach((button) => {
         }
     })
     
-   
 });
 
 
